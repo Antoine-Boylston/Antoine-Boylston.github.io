@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Artifacts | Antoine Boylston</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        header {
+            background-color: #1f2937;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav {
+            background-color: #111827;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #38bdf8;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: auto;
+            padding: 20px;
+            background: white;
+        }
+
+        .artifact-card {
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 20px;
+            background: #fafafa;
+        }
+
+        .artifact-card h3 {
+            margin-top: 0;
+        }
+
+        .button {
+            display: inline-block;
+            padding: 10px 15px;
+            margin-top: 10px;
+            background-color: #2563eb;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        .button:hover {
+            background-color: #1d4ed8;
+        }
+
+        footer {
+            text-align: center;
+            padding: 15px;
+            background: #1f2937;
+            color: white;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Artifacts</h1>
+        <p>Showcasing My Growth in Computer Science</p>
+    </header>
+
+    <nav>
+        <a href="../index.html">Home</a>
+        <a href="../code-review.html">Code Review</a>
+        <a href="artifacts.html">Artifacts</a>
+    </nav>
+
+    <div class="container">
+
+        <h2>Project Portfolio</h2>
+        <p>
+            The following artifacts demonstrate my development across key areas of computer science,
+            including software engineering, algorithms and data structures, and database design.
+            Each project highlights both the original implementation and the enhancements made
+            to improve functionality, structure, and performance.
+        </p>
+
+        <!-- SOFTWARE ENGINEERING -->
+        <div class="artifact-card">
+            <h3>Software Engineering: Modular Refactor</h3>
+            <p>
+                Dragon King Assassin is a text-based adventure game originally developed as a procedural Python script.
+                It was enhanced through a full refactor into a modular architecture, separating core components such as
+                the game engine, player model, and command parser. This transformation improved code organization,
+                maintainability, and scalability while demonstrating modern software engineering practices.
+            </p>
+            <a class="button" href="artifacts/software-engineering/index.html">View Project</a>
+        </div>
+
+        <!-- ALGORITHMS -->
+        <div class="artifact-card">
+            <h3>Algorithms & Data Structures: Graph & BFS Implementation</h3>
+            <p>
+                This enhancement expands Dragon King Assassin by introducing algorithmic problem-solving techniques.
+                The game’s structure was transformed into a graph representation, and a breadth-first search (BFS)
+                algorithm was implemented to power a dynamic “Hint” system. This demonstrates the use of data
+                structures,
+                graph traversal, and efficient pathfinding to enhance gameplay functionality.
+            </p>
+            <a class="button" href="artifacts/algorithms/index.html">View Project</a>
+        </div>
+
+        <!-- DATABASES -->
+        <div class="artifact-card">
+            <h3>Databases: Serverless Portfolio with AWS</h3>
+            <p>
+                This artifact enhances a professional portfolio website by transitioning from static content to a
+                dynamic, database-driven architecture. The Projects section was refactored to retrieve data through
+                an API powered by AWS Lambda and DynamoDB, enabling scalable, serverless data management and
+                demonstrating modern full-stack and cloud development practices.
+            </p>
+            <a class="button" href="artifacts/databases/index.html">View Project</a>
+        </div>
+
+    </div>
+
+    <footer>
+        <p>© 2026 Antoine Boylston</p>
+    </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Software Engineering Artifact | Antoine Boylston</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        header {
+            background-color: #1f2937;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav {
+            background-color: #111827;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #38bdf8;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: auto;
+            padding: 20px;
+            background: white;
+        }
+
+        h2 {
+            border-bottom: 2px solid #ddd;
+            padding-bottom: 5px;
+        }
+
+        .image {
+            margin: 15px 0;
+            text-align: center;
+        }
+
+        .image img {
+            max-width: 100%;
+            border-radius: 8px;
+        }
+
+        .button {
+            display: inline-block;
+            padding: 10px 15px;
+            margin: 10px 10px 0 0;
+            background-color: #2563eb;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 15px;
+            background: #1f2937;
+            color: white;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>Software Engineering Enhancement</h1>
+    <p>Dragon King Assassin Refactor</p>
+</header>
+
+<nav>
+    <a href="../../index.html">Home</a>
+    <a href="../../artifacts.html">Artifacts</a>
+</nav>
+
+<div class="container">
+
+    <!-- DESCRIPTION -->
+    <h2>Artifact Description</h2>
+    <p>
+        Dragon King Assassin is a text-based adventure game originally developed in Python as part of an early programming course.
+        The application allows a player to navigate rooms, collect items, and attempt to defeat a final boss based on game progression.
+        The original implementation relied on a single procedural script, which limited scalability and maintainability.
+    </p>
+
+    <!-- WHY INCLUDED -->
+    <h2>Justification for Inclusion</h2>
+    <p>
+        This artifact was selected because it provides a clear demonstration of my growth from foundational programming concepts
+        to more advanced software engineering practices. While the original version showcases basic control flow and data handling,
+        the enhanced version reflects my ability to design modular, maintainable, and scalable systems.
+    </p>
+
+    <!-- BEFORE -->
+    <h2>Original Implementation</h2>
+    <p>
+        The original program was written as a single script containing all game logic, including movement, item tracking,
+        and user input handling. This tightly coupled design made it difficult to extend functionality or test individual components.
+    </p>
+
+    <!-- 🔥 SCREENSHOT 1 -->
+    <div class="image">
+        <img src="../../media/screenshots/se-before.png" alt="Original procedural code">
+        <p><em>Original procedural implementation with all logic in a single script.</em></p>
+    </div>
+
+    <!-- AFTER -->
+    <h2>Enhancements and Improvements</h2>
+    <p>
+        The enhanced version of the game was refactored into a modular architecture with clearly defined components,
+        including a game engine, player model, world model, command parser, and data module. This separation of concerns
+        significantly improved code organization, readability, and maintainability.
+    </p>
+
+    <ul>
+        <li>Refactored procedural code into modular components</li>
+        <li>Implemented a command parser for structured input handling</li>
+        <li>Improved validation and control flow logic</li>
+        <li>Added test cases to verify functionality</li>
+        <li>Created documentation including README and docstrings</li>
+    </ul>
+
+    <!-- 🔥 SCREENSHOT 2 -->
+    <div class="image">
+        <img src="../../media/screenshots/se-after-structure.png" alt="Refactored file structure">
+        <p><em>Refactored modular structure with separated components.</em></p>
+    </div>
+
+    <!-- 🔥 SCREENSHOT 3 -->
+    <div class="image">
+        <img src="../../media/screenshots/se-parser.png" alt="Command parser example">
+        <p><em>Command parser implementation improving input handling.</em></p>
+    </div>
+
+    <!-- SKILLS -->
+    <h2>Skills Demonstrated</h2>
+    <ul>
+        <li>Software architecture and modular design</li>
+        <li>Separation of concerns</li>
+        <li>Input validation and error handling</li>
+        <li>Code refactoring and maintainability improvements</li>
+        <li>Basic testing and documentation practices</li>
+    </ul>
+
+    <!-- OUTCOMES -->
+    <h2>Course Outcomes</h2>
+    <p>
+        This enhancement aligns with key course outcomes by demonstrating the ability to design and evaluate computing solutions
+        using software engineering principles (Outcome 3), communicate effectively through organized and documented code (Outcome 2),
+        and improve system reliability through better validation and structure (Outcome 5).
+    </p>
+
+    <!-- REFLECTION -->
+    <h2>Reflection</h2>
+    <p>
+        This enhancement reinforced the importance of writing code that is not only functional but also maintainable and scalable.
+        One of the main challenges was breaking apart tightly coupled logic into separate modules while preserving functionality.
+        Through this process, I gained a deeper understanding of system design and how to structure applications for long-term growth.
+    </p>
+
+    <!-- LINKS -->
+    <h2>Project Links</h2>
+    <a class="button" href="https://github.com/Antoine-Boylston/CS-499-Computer-Science-Capstone/tree/main/DragonKingOriginal" target="_blank">Original Repository</a>
+    <a class="button" href="https://github.com/Antoine-Boylston/CS-499-Computer-Science-Capstone/tree/main/AntoineBoylston_DragonKingRefactored" target="_blank">Enhanced Repository</a>
+    
+
+</div>
+
+<footer>
+    <p>© 2026 Antoine Boylston</p>
+</footer>
+
+</body>
+</html>

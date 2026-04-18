@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Algorithms & Data Structures | Antoine Boylston</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        header {
+            background-color: #1f2937;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav {
+            background-color: #111827;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #38bdf8;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: auto;
+            padding: 20px;
+            background: white;
+        }
+
+        h2 {
+            border-bottom: 2px solid #ddd;
+            padding-bottom: 5px;
+        }
+
+        .image {
+            margin: 15px 0;
+            text-align: center;
+        }
+
+        .image img {
+            max-width: 100%;
+            border-radius: 8px;
+        }
+
+        .button {
+            display: inline-block;
+            padding: 10px 15px;
+            margin: 10px 10px 0 0;
+            background-color: #2563eb;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 15px;
+            background: #1f2937;
+            color: white;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>Algorithms & Data Structures Enhancement</h1>
+    <p>Graph Representation & Breadth-First Search (BFS)</p>
+</header>
+
+<nav>
+    <a href="../../index.html">Home</a>
+    <a href="../../artifacts.html">Artifacts</a>
+</nav>
+
+<div class="container">
+
+    <!-- DESCRIPTION -->
+    <h2>Artifact Description</h2>
+    <p>
+        Dragon King Assassin is a text-based adventure game originally implemented using basic Python
+        data structures such as dictionaries. The game allows players to navigate between rooms, collect
+        items, and progress toward defeating a final boss. While functional, the original implementation
+        relied on simple lookups and did not leverage advanced algorithmic techniques.
+    </p>
+
+    <!-- JUSTIFICATION -->
+    <h2>Justification for Inclusion</h2>
+    <p>
+        This artifact was selected because it demonstrates a clear transition from basic data handling
+        to advanced algorithmic problem-solving. The enhancement showcases my ability to apply data
+        structures and algorithms to improve functionality and create a more intelligent and dynamic system.
+    </p>
+
+    <!-- BEFORE -->
+    <h2>Original Implementation</h2>
+    <p>
+        In the original version, the game world was represented as a nested dictionary. Movement between
+        rooms was handled through direct key lookups, with no abstraction or algorithmic reasoning applied.
+        While effective for small-scale logic, this approach limited the system’s ability to support more
+        advanced features such as pathfinding or optimization.
+    </p>
+
+    <!-- 🔥 SCREENSHOT 1 -->
+    <div class="image">
+        <img src="../../media/screenshots/algo-before.png" alt="Original dictionary structure">
+        <p><em>Original room structure using nested dictionaries for direct lookups.</em></p>
+    </div>
+
+    <!-- ENHANCEMENTS -->
+    <h2>Enhancements and Improvements</h2>
+    <p>
+        The enhanced version transforms the room structure into a graph representation, where each room
+        functions as a node and directional connections represent edges. A breadth-first search (BFS)
+        algorithm was implemented to compute the shortest path between rooms.
+    </p>
+
+    <ul>
+        <li>Converted room structure into a graph using adjacency lists</li>
+        <li>Implemented BFS for shortest path calculation</li>
+        <li>Developed a dynamic “Hint” system for optimal navigation</li>
+        <li>Handled multiple valid shortest paths</li>
+        <li>Added test cases to validate algorithm correctness</li>
+    </ul>
+
+    <!-- 🔥 SCREENSHOT 2 -->
+    <div class="image">
+        <img src="../../media/screenshots/algo-graph.png" alt="Graph representation">
+        <p><em>Graph-based representation of rooms and connections.</em></p>
+    </div>
+
+    <!-- 🔥 SCREENSHOT 3 -->
+    <div class="image">
+        <img src="../../media/screenshots/algo-bfs.png" alt="BFS implementation">
+        <p><em>Breadth-First Search implementation used for pathfinding.</em></p>
+    </div>
+
+    <!-- 🔥 SCREENSHOT 4 -->
+    <div class="image">
+        <img src="../../media/screenshots/algo-hint.png" alt="Hint system output">
+        <p><em>Hint system guiding the player using shortest path logic.</em></p>
+    </div>
+
+    <!-- SKILLS -->
+    <h2>Skills Demonstrated</h2>
+    <ul>
+        <li>Graph data structure implementation</li>
+        <li>Breadth-first search (BFS) algorithm</li>
+        <li>Algorithm design and problem-solving</li>
+        <li>Data structure transformation and optimization</li>
+        <li>Testing and validation of algorithm behavior</li>
+    </ul>
+
+    <!-- OUTCOMES -->
+    <h2>Course Outcomes</h2>
+    <p>
+        This enhancement aligns with Outcome 3 by demonstrating the ability to design and evaluate
+        computing solutions using algorithmic principles and appropriate data structures. It also
+        supports Outcome 4 by implementing a feature that delivers meaningful value through efficient
+        problem-solving techniques.
+    </p>
+
+    <!-- REFLECTION -->
+    <h2>Reflection</h2>
+    <p>
+        This enhancement strengthened my understanding of how data structures and algorithms can transform
+        an application’s capabilities. One of the key challenges was implementing BFS correctly, including
+        tracking visited nodes and reconstructing the shortest path. Additionally, I learned how to validate
+        algorithm correctness in scenarios with multiple valid solutions. This experience reinforced the
+        importance of choosing appropriate data structures to enable scalable and efficient solutions.
+    </p>
+
+    <!-- LINKS -->
+    <h2>Project Links</h2>
+    <a class="button" href="https://github.com/Antoine-Boylston/CS-499-Computer-Science-Capstone/tree/main/DragonKingOriginal" target="_blank">Original Repository</a>
+    <a class="button" href="https://github.com/Antoine-Boylston/CS-499-Computer-Science-Capstone/tree/main/AntoineBoylston_DragonKingRefactored" target="_blank">Enhanced Repository</a>
+    
+
+</div>
+
+<footer>
+    <p>© 2026 Antoine Boylston</p>
+</footer>
+
+</body>
+</html>

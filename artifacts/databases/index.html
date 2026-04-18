@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Database Enhancement | Antoine Boylston</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        header {
+            background-color: #1f2937;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav {
+            background-color: #111827;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #38bdf8;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: auto;
+            padding: 20px;
+            background: white;
+        }
+
+        h2 {
+            border-bottom: 2px solid #ddd;
+            padding-bottom: 5px;
+        }
+
+        .image {
+            margin: 15px 0;
+            text-align: center;
+        }
+
+        .image img {
+            max-width: 100%;
+            border-radius: 8px;
+        }
+
+        .button {
+            display: inline-block;
+            padding: 10px 15px;
+            margin: 10px 10px 0 0;
+            background-color: #2563eb;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 15px;
+            background: #1f2937;
+            color: white;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Database Enhancement</h1>
+        <p>Serverless Portfolio with AWS DynamoDB & Lambda</p>
+    </header>
+
+    <nav>
+        <a href="../../index.html">Home</a>
+        <a href="../../artifacts.html">Artifacts</a>
+    </nav>
+
+    <div class="container">
+
+        <!-- DESCRIPTION -->
+        <h2>Artifact Description</h2>
+        <p>
+            This artifact is a professional portfolio website originally developed as a static HTML application.
+            The site was designed to showcase projects, technical skills, and professional growth. In its original
+            form, the Projects section relied on hardcoded HTML, requiring manual updates for any changes.
+        </p>
+
+        <!-- JUSTIFICATION -->
+        <h2>Justification for Inclusion</h2>
+        <p>
+            This artifact was selected because it represents a real-world application and demonstrates the transition
+            from a static website to a dynamic, data-driven system. The enhancement showcases my ability to design
+            scalable architectures and integrate cloud-based database solutions using modern development practices.
+        </p>
+
+        <!-- BEFORE -->
+        <h2>Original Implementation</h2>
+        <p>
+            Initially, all project data—including titles, descriptions, images, and links—was embedded directly
+            in the HTML. While functional, this approach limited scalability and required manual updates to the
+            codebase whenever new projects were added.
+        </p>
+
+        <!-- 🔥 SCREENSHOT 1 -->
+        <div class="image">
+            <img src="../../media/screenshots/db-before.png" alt="Static HTML projects section">
+            <p><em>Original static implementation with hardcoded project data in HTML.</em></p>
+        </div>
+
+        <!-- ENHANCEMENTS -->
+        <h2>Enhancements and Improvements</h2>
+        <p>
+            The enhanced version transforms the portfolio into a serverless application using AWS DynamoDB,
+            AWS Lambda, and API Gateway to create a scalable, cloud-based architecture. Project data is now stored in
+            DynamoDB and retrieved through an API powered by AWS Lambda.
+            This allows the frontend to dynamically render project content, significantly improving scalability,
+            maintainability, and flexibility.
+        </p>
+
+        <ul>
+            <li>Refactored static HTML into dynamic JavaScript rendering</li>
+            <li>Integrated AWS Lambda to handle backend logic</li>
+            <li>Connected API Gateway for HTTP access to backend services</li>
+            <li>Stored project data in DynamoDB for scalable data management</li>
+            <li>Implemented asynchronous API calls to fetch and display project data</li>
+        </ul>
+
+        <!-- 🔥 SCREENSHOT 2 -->
+        <div class="image">
+            <img src="../../media/screenshots/db-dynamodb.png" alt="DynamoDB table">
+            <p><em>DynamoDB table storing project data used by the application.</em></p>
+        </div>
+
+        <!-- 🔥 SCREENSHOT 3 -->
+        <div class="image">
+            <img src="../../media/screenshots/db-api-gateway.png" alt="API Gateway route">
+            <p><em>API Gateway route exposing the /projects endpoint for retrieving data.</em></p>
+        </div>
+
+        <!-- 🔥 SCREENSHOT 4 -->
+        <div class="image">
+            <img src="../../media/screenshots/db-lambda.png" alt="Lambda function">
+            <p><em>AWS Lambda function retrieving data from DynamoDB and returning it through the API.</em></p>
+        </div>
+
+        <!-- 🔥 SCREENSHOT 5 -->
+        <div class="image">
+            <img src="../../media/screenshots/db-ui.png" alt="Dynamic UI rendering">
+            <p><em>Portfolio dynamically loading project data from the API and rendering it in the UI.</em></p>
+        </div>
+
+        <!-- SKILLS -->
+        <h2>Skills Demonstrated</h2>
+        <ul>
+            <li>Database design using NoSQL (DynamoDB)</li>
+            <li>Serverless architecture (AWS Lambda, API Gateway)</li>
+            <li>Frontend-backend integration using APIs</li>
+            <li>Asynchronous JavaScript (fetch/HTTP requests)</li>
+            <li>Scalable system design and cloud computing concepts</li>
+        </ul>
+
+        <!-- OUTCOMES -->
+        <h2>Course Outcomes</h2>
+        <p>
+            This enhancement aligns with Outcome 3 by demonstrating the design of a scalable, data-driven system.
+            It supports Outcome 4 through the use of modern cloud technologies to implement a practical solution.
+            Additionally, it addresses Outcome 5 by preparing the system for secure API integration and controlled
+            data access.
+        </p>
+
+        <!-- REFLECTION -->
+        <h2>Reflection</h2>
+        <p>
+            This enhancement provided valuable experience in transitioning from static web development to dynamic,
+            database-driven applications. One of the key lessons was understanding the importance of separating
+            data from presentation to improve maintainability and scalability. A significant challenge involved
+            integrating AWS services while maintaining the original design of the site. This required careful
+            handling of API responses, debugging CORS issues, and ensuring proper deployment configurations.
+            Overall, this process strengthened my understanding of full-stack development and serverless
+            architecture.
+        </p>
+
+        <!-- LINKS -->
+        <h2>Project Links</h2>
+        <a class="button" href="https://github.com/Antoine-Boylston/portfolio_website/tree/main/ORIGINAL_ARTIFACT"
+            target="_blank">Original Repository</a>
+        <a class="button" href="https://github.com/Antoine-Boylston/portfolio_website/tree/main/ENHANCED_ARTIFACT"
+            target="_blank">Enhanced Repository</a>
+
+    </div>
+
+    <footer>
+        <p>© 2026 Antoine Boylston</p>
+    </footer>
+
+</body>
+
+</html>
